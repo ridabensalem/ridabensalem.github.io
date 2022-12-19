@@ -61,7 +61,8 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**[Portfolio desktop]** is a...
+**[Portfolio desktop]** is a personal portfolio showin the latest projects, my resume and social media contact 
+you can check it here [Rida Portfolio](https://ridabensalem.github.io/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -108,7 +109,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://ridabensalem.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
