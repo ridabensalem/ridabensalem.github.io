@@ -893,7 +893,7 @@ body {
 /* ----------------------------------------------POP UP display ----------------------------------------------------------- */
 .popup-container {
   background: #fff;
-  border: 1px solid green;
+  border:1px solid #ebecf0;
   position: fixed;
   z-index: 10;
   top: 0;
