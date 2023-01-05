@@ -24,12 +24,10 @@ body {
 .popup-container {
   background: #fff;
   border: 1px solid #ebecf0;
-  position: fixed;
+  position: absolute;
   z-index: 10;
   left: 20%;
   top: 0;
-  max-width: 1156px;
-  width: 100%;
   display: none;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 16px;
@@ -728,15 +726,19 @@ body {
   .popup-container {
     background: #fff;
     border: 1px solid #ebecf0;
-    position: fixed;
+    position: absolute;
     z-index: 10;
     left: 20%;
-    top: 0;
+    top: 5%;
     max-width: 1156px;
     width: 100%;
     display: none;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
+  }
+
+  .paragraph-description-mobile {
+    display: none;
   }
 
   .navbar__menu__link:hover {
@@ -785,11 +787,11 @@ body {
     background: #fff;
     border: 1px solid #ebecf0;
     width: 90%;
-    top: 0%;
-    position: fixed;
+    top: 12%;
+    height: 713px;
+    position: absolute;
     z-index: 10;
     left: 5%;
-    height: fit-content;
     display: none;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
@@ -814,7 +816,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    color: #091e42;
+    color: #172b4d;
   }
 
   .small-tags {
@@ -832,6 +834,7 @@ body {
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
+    color: #344563;
   }
 
   .counter {
@@ -862,8 +865,6 @@ body {
   .buttom-content-container {
     display: flex;
     flex-direction: column;
-
-    /* border: 1px solid red; */
     width: 311px;
     margin-left: 5%;
     margin-top: -1%;
@@ -875,7 +876,7 @@ body {
 
   .paragraph-description-mobile {
     display: flex;
-    width: 99%;
+    width: 311px;
     height: 220px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -883,7 +884,6 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #344563;
-    padding: 1px;
     margin-top: 4%;
   }
 
@@ -919,7 +919,6 @@ body {
   }
 
   .popup-tags {
-    /* border: 1px solid red; */
     height: 24%;
     margin-top: 10%;
     position: relative;
@@ -948,8 +947,8 @@ body {
   }
 
   .popup-button-action {
-    /* border: 1px solid red; */
-    width: 100%;
+    /* border: 1px solid green; */
+    width: 311px;
     height: 50%;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -959,9 +958,8 @@ body {
     display: flex;
     margin-top: 5px;
     flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    right: 6%;
+    justify-content: space-around;
+    margin-left: -25px;
   }
 
   .popup-button-action button {
@@ -1225,6 +1223,7 @@ body {
 
   .works__cards {
     padding: 8.8rem;
+    position: relative;
   }
 
   .about {
