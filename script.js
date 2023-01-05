@@ -9,7 +9,7 @@ const project = {
 };
 //  -----------------Handiling the pop up functionality----------------------------
 const buttonPopup = document.querySelector('button');
-const modalPopup = document.querySelector('#block-popup');
+const modalPopup = document.querySelector('.block-popup');
 function Display() {
   modalPopup.style.display = 'block';
 }
