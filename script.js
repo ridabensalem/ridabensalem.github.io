@@ -23,6 +23,9 @@ function validateEmail() {
   const error = document.getElementById('errorMessage');
   if (email.toLowerCase() !== email) {
     error.innerHTML = 'Please enter your email in lowercase';
+    error.style.display = 'block';
+    error.style.color = "#FFFF";
+    error.style.fontSize = "larger";
     return false;
   }
   document.getElementById('errorMessage').innerHTML = '';
