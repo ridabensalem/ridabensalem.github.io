@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="description" content="Rida Bensalem Portfolio" />
+  <meta name="author" content="Rida  Bensalem" />
+
+  <meta http-equiv="refresh" content="30" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <title>Rida Bensalem Portfolio</title>
 </head>
 
 <body>
-  <div class="hero ">
+  <div class="hero">
     <header class="header bg-white">
       <nav class="navbar flex">
-        <a href="#" class="navbar__link link fz-20 fw-700 lh-20">RIDA</a>
+        <a href="#" class="navbar__link link fz-20 fw-700 lh-20" role="button">RIDA</a>
         <div class="navbar__menu">
           <ul class="navbar__menu__ul ul flex">
             <li class="navbar__menu__li">
@@ -43,19 +49,21 @@
       <a href="#works" class="head__link link fz-16 fw-500 lh-24 clr-p-400">My Projects</a>
       <ul class="head__icons ul flex">
         <li class="head__icons__li">
-          <a href="#" class="head__icons__link link"><img src="images/twitter.png" alt="twitter icon" /></a>
+          <a href="#" class="head__icons__link link"><img src="images/twitter.png" alt="twitter icon"
+              role="button" /></a>
         </li>
         <li class="head__icons__li">
-          <a href="#" class="head__icons__link link"><img src="images/Linkedin.svg" alt="linkedin icon" /></a>
+          <a href="#" class="head__icons__link link"><img src="images/Linkedin.svg" alt="linkedin icon"
+              role="button" /></a>
         </li>
         <li class="head__icons__li">
-          <a href="#" class="head__icons__link link"><img src="images/M.png" alt="M icon" /></a>
+          <a href="#" class="head__icons__link link"><img src="images/M.png" alt="M icon" role="button" /></a>
         </li>
         <li class="head__icons__li">
-          <a href="#" class="head__icons__link link"><img src="images/github.svg" alt="github icon" /></a>
+          <a href="#" class="head__icons__link link"><img src="images/github.svg" alt="github icon" role="button" /></a>
         </li>
         <li class="head__icons__li">
-          <a href="#" class="head__icons__link link"><img src="images/hand.svg" alt="hand icon" /></a>
+          <a href="#" class="head__icons__link link"><img src="images/hand.svg" alt="hand icon" role="button" /></a>
         </li>
       </ul>
     </section>
@@ -89,8 +97,7 @@
               <p class="works__card__topics__text fw-500 fz-12 lh-16 clr-p-400 bg-p-50">
                 html
               </p>
-              <p class="works__card__topics__text fw-500 fz-12 lh-16 clr-p-400 bg-p-50
-                  ">
+              <p class="works__card__topics__text fw-500 fz-12 lh-16 clr-p-400 bg-p-50">
                 css
               </p>
               <p class="works__card__topics__text fw-500 fz-12 lh-16 clr-p-400 bg-p-50">
@@ -98,14 +105,106 @@
               </p>
             </div>
             <div class="works__card__btn">
-              <button type="button" class="btn fw-500 fz-17 lh-24 clr-p-500 bg-white first-btn" id="0">
+              <button type="button" class="btn fw-500 fz-17 lh-24 clr-p-500 bg-white first-btn" id="pop-button" id="0"
+               >
                 See Project
               </button>
+              <!----------------------------------------- POPUP STRUCTURE --------------------------------------------------------------------- -->
+              <div class="popup-container block-popup">
+                <div id="popup-modal" class="pop-content">
+                  <div class="headline-popup">
+                    <h1>Tonic</h1>
+                    <a href="#" role="button">
+                      <img src="images/closing-button.svg" alt="closing button-popup" id="close-btn" /></a>
+                  </div>
+                </div>
+                <ul class="small-tags">
+                  <li class="canopy-sm-tag">CANOPY</li>
+                  <li>
+                    <img src="images/Counter.svg" alt="counter tags" role="button" class="counter" />
+                  </li>
+                  <li class="second-sm-tag">Back End Dev</li>
+                  <li>
+                    <img src="images/Counter.svg" alt="counter tags" role="button" class="counter" />
+                  </li>
+                  <li class="second-sm-tag">2015</li>
+                </ul>
+                <div class="popup-image-container">
+                  <img src="images/Snapshoot Portfolio.png" alt="pop-image" />
+                </div>
+                <div class="popup-mobile-container">
+
+                </div>
+                <div class="buttom-content-container">
+                  <div class="paragraph-description">
+                    <p class="paragraph-description-desktop">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the
+                      industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and
+                      scrambled it 1960s with the releaLorem Ipsum is simply
+                      dummy text of the printing and typesetting industry.
+                      Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s, when an unknown printer took a
+                      galley of type and scrambled it 1960s with the releorem
+                      Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum han printer took a
+                      galley of type and scrambled it 1960s with the releawn
+                      printer took a galley of type and scrambled it 1960s
+                      with the releaLorem Ipsum is simply dummy text of the
+                      printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and
+                      scrambled it 1960s with the relea
+                    </p>
+                    <p class="paragraph-description-mobile">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy
+                      text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                      a type specimen book.
+                      It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                      essent
+
+                    </p>
+                  </div>
+                  <div class="action-content">
+                    <div class="popup-tags">
+                      <ul class="first">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>javascript</li>
+                      </ul>
+                      <ul class="second">
+                        <li>github</li>
+                        <li>ruby</li>
+                        <li>Bootstrap</li>
+                      </ul>
+                    </div>
+                    <div class="divider-popup">
+                      <img src="images/Devider.svg" alt="Divider popup" />
+                    </div>
+                    <div class="popup-button-action">
+                      <button type="submit">
+                        <a href="">See live
+                          <img src="images/deploy.svg" alt="deployment icon" class="deploy-icon-popup" /></a>
+                      </button>
+                      <button type="submit">
+                        <a href="">See Source</a>
+                        <img src="images/github-popup.svg" alt="github icon" class="github-icon-popup" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-------------------------------  END OF POP UP STRUCTURE --------------------------------------------------------------------- -->
             </div>
           </div>
         </li>
         <li class="works__card flex bg-white">
-          <img class="works__card__img" src="images/desktop/multi-post-stories-project.svg" alt="multi-post stories project" />
+          <img class="works__card__img" src="images/desktop/multi-post-stories-project.svg"
+            alt="multi-post stories project" />
           <div class="works__card__text">
             <h2 class="works__card__title fw-700 fz-32 lh-44 clr-n-800">
               Multi-Post Stories
@@ -118,7 +217,7 @@
                 <li class="works__card__subtitle-li fw-600 fz-13 lh-16 clr-n-500">
                   Full Stack Dev
                 </li>
-                <li class="works__card__subtitle-li fw-600 fz-13 lh-16 clr-n-500"> 
+                <li class="works__card__subtitle-li fw-600 fz-13 lh-16 clr-n-500">
                   2015
                 </li>
               </ul>
@@ -143,7 +242,8 @@
               </p>
             </div>
             <div class="works__card__btn">
-              <button type="button" class="btn fw-500 fz-17 lh-24 clr-p-500 bg-white second-btn" id="1">
+              <button type="button" class="btn fw-500 fz-17 lh-24 clr-p-500 bg-white second-btn" id="pop-btn" id="1"
+               >
                 See Project
               </button>
             </div>
@@ -188,14 +288,16 @@
               </p>
             </div>
             <div class="works__card__btn">
-              <button type="button" class="btn fw-500 fz-17 lh-24 clr-p-500 bg-white third-btn" id="2">
+              <button type="button" class="btn fw-500 fz-17 lh-24 clr-p-500 bg-white third-btn" id="2"
+              >
                 See Project
               </button>
             </div>
           </div>
         </li>
         <li class="works__card flex bg-white">
-          <img class="works__card__img" src="images/desktop/uber-navigation-project.svg" alt="professional art printing project" />
+          <img class="works__card__img" src="images/desktop/uber-navigation-project.svg"
+            alt="professional art printing project" />
           <div class="works__card__text">
             <h2 class="works__card__title fw-700 fz-32 lh-44 clr-n-800">
               Uber Navigation
@@ -232,7 +334,8 @@
               </p>
             </div>
             <div class="works__card__btn">
-              <button type="button" class="btn fw-500 fz-17 lh-24 clr-p-500 bg-white fourth-btn" id="3">
+              <button type="button" class="btn fw-500 fz-17 lh-24 clr-p-500 bg-white fourth-btn" id="3"
+                >
                 See Project
               </button>
             </div>
@@ -257,19 +360,22 @@
         </h3>
         <ul class="about__icons__ul ul flex">
           <li class="about__icons__li">
-            <a href="#" class="about__icons__link link"><img src="images/github.svg" alt="github icon" /></a>
+            <a href="#" class="about__icons__link link"><img src="images/github.svg" alt="github icon"
+                role="button" /></a>
           </li>
           <li class="about__icons__li">
-            <a href="#" class="about__icons__link link"><img src="images/Linkedin.svg" alt="linkedin icon" /></a>
+            <a href="#" class="about__icons__link link"><img src="images/Linkedin.svg" alt="linkedin icon"
+                role="button" /></a>
           </li>
           <li class="about__icons__li">
-            <a href="#" class="about__icons__link link"><img src="images/hand.svg" alt="hand icon" /></a>
+            <a href="#" class="about__icons__link link"><img src="images/hand.svg" alt="hand icon" role="button" /></a>
           </li>
           <li class="about__icons__li">
-            <a href="#" class="about__icons__link link"><img src="images/twitter.png" alt="twitter icon" /></a>
+            <a href="#" class="about__icons__link link"><img src="images/twitter.png" alt="twitter icon"
+                role="button" /></a>
           </li>
           <li class="about__icons__li">
-            <a href="#" class="about__icons__link link"><img src="images/M.png" alt="M icon" /></a>
+            <a href="#" class="about__icons__link link"><img src="images/M.png" alt="M icon" role="button" /></a>
           </li>
         </ul>
         <button type="button" class="btn fw-500 fz-17 lh-24 clr-p-500 bg-white">
@@ -282,7 +388,7 @@
             <h3 class="about__lang__top__title fw-500 fz-20 lh-24 clr-n-900">
               Languages
             </h3>
-            <img class="about__lang__top__img" src="images/arrow.png" alt="arrow icon" />
+            <img class="about__lang__top__img" src="images/arrow.png" alt="arrow icon" tabindex="0" />
           </div>
           <ul class="about__lang__bottom ul">
             <li class="flex bg-n-300">
@@ -310,7 +416,7 @@
             <h3 class="about__frameworks__top__title fw-500 fz-20 lh-24 clr-n-900">
               Frameworks
             </h3>
-            <img class="about__frameworks__top__img" src="images/arrow.png" alt="arrow icon" />
+            <img class="about__frameworks__top__img" src="images/arrow.png" alt="arrow icon" tabindex="0" />
           </div>
         </li>
         <li class="about__skills">
@@ -334,21 +440,24 @@
         <form id="form" action="https://formspree.io/f/xzbwnnow" method="post">
           <ul class="ul">
             <li>
-              <label for="fname" class="fw-500 fz-17 lh-20">Name:</label>
-              <input type="text" id="fname" class="contact__name fw-500 fz-17 lh-20" name="contact_name"
+              <label for="fname" class="fw-500 fz-17 lh-20">Full Name:</label>
+              <input type="text" id="fullname" class="contact__name fw-500 fz-17 lh-20" name="contact_name"
                 placeholder="Enter your name" required maxlength="30" />
             </li>
             <li>
               <label for="email" class="fw-500 fz-17 lh-20">Email:</label>
               <input type="email" id="email" class="contact__email fw-500 fz-17 lh-20" placeholder="Enter your email"
-                name="contact_email" required/>
+                name="contact_email" required />
             </li>
             <li>
-              <label for="message" class="fw-500 fz-17 lh-20">Message:</label>
-              <textarea id="message" class="fw-500 fz-17 lh-20" name="contact_message" placeholder="Write your message here"
-                cols="30" rows="8" maxlength="500" required></textarea>
+              <label for="message" class="fw-500 fz-17 lh-20" hidden>Message:</label>
+              <textarea id="message" class="fw-500 fz-17 lh-20" name="contact_message"
+                placeholder="Write your message here" cols="30" rows="8" maxlength="500" required></textarea>
             </li>
             <li>
+              <div id="errorMessage" class="error-message">
+
+              </div>
               <input type="submit" value="Get It Touch" class="btn btn--submit fw-500 fz-17 lh-24" />
               <p class="error fw-700 fz-20 lh-28"></p>
             </li>
@@ -357,6 +466,7 @@
       </div>
     </section>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
