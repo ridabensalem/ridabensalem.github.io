@@ -16,3 +16,15 @@ function Display() {
 function closePopup() {
   modalPopup.style.display = 'none';
 }
+// ---------------------------Contact form validation---------------------
+
+function validateEmail() {
+  const email = document.getElementById('email').value;
+  const error = document.getElementById('errorMessage');
+  if (email.toLowerCase() !== email) {
+    error.innerHTML = 'Please enter your email in lowercase';
+    return false;
+  }
+  document.getElementById('errorMessage').innerHTML = '';
+  return true;
+}

@@ -599,6 +599,7 @@
             id="form"
             action="https://formspree.io/f/xzbwnnow"
             method="post"
+            onsubmit=" return validateEmail()"
           >
             <ul class="ul">
               <li>
@@ -640,6 +641,9 @@
                 ></textarea>
               </li>
               <li>
+                 <div id="errorMessage" class="error-message">
+                  
+                 </div>
                 <input
                   type="submit"
                   value="Get It Touch"
