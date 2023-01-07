@@ -20,175 +20,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ----------------------------------------------POP UP display ----------------------------------------------------------- */
-.popup-container {
-  width: 60%;
-  height: 99%;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  background: #fff;
-  border: 1px solid #ebecf0;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  border-radius: 16px;
-}
-
-.popup-content {
-  font-family: "Poppins", sans-serif;
-}
-
-.headline-popup {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 24px;
-  margin-left: 24px;
-  width: 95%;
-  height: 40px;
-}
-
-.headline-popup h1 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #091e42;
-}
-
-.small-tags {
-  display: flex;
-  width: 280px;
-  height: 36px;
-  list-style: none;
-  flex-direction: row;
-  padding-left: 12px;
-  justify-content: space-around;
-  margin-top: 8px;
-  margin-left: 20px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.counter {
-  width: 8px;
-  height: 8px;
-}
-
-.canopy-sm-tag {
-  color: #344563;
-}
-
-.second-sm-tag {
-  color: #7a869a;
-}
-
-.popup-image-container img {
-  max-width: 100%;
-  height: auto;
-}
-
-.buttom-content-container {
-  width: 1108px;
-  height: 382px;
-  margin-top: 59px;
-  margin-left: 24px;
-  display: flex;
-  flex-direction: row;
-}
-
-/* .paragraph-description-mobile{
-  display: none;
-} */
-.paragraph-description-desktop {
-  width: 778px;
-  height: 382px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 16px;
-  line-height: 30px;
-  color: #344563;
-  padding: 1px;
-}
-
-.action-content {
-  width: 306px;
-  height: 157px;
-  margin-left: 24px;
-}
-
-.popup-tags {
-  height: 45%;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-}
-
-.popup-tags .first,
-.popup-tags .second {
-  display: flex;
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  height: 50%;
-}
-
-.popup-tags .first li {
-  margin-top: 2px;
-  padding: 4px 8px;
-  background: #ebebff;
-  margin-left: 8px;
-  border-radius: 8px;
-  height: 24px;
-}
-
-.popup-tags .second li {
-  margin-top: 2px;
-  margin-left: 8px;
-  padding: 4px 12px;
-  background: #ebebff;
-  border-radius: 8px;
-  height: 24px;
-}
-
-.popup-button-action {
-  width: 306px;
-  height: 50%;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  margin-top: 5px;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.popup-button-action button {
-  background: #fff;
-  width: 142px;
-  height: 40px;
-  padding: 8px 12px;
-  border: 1px solid #396df2;
-  border-radius: 8px;
-}
-
-.deploy-icon-popup {
-  width: 18px;
-  position: relative;
-  top: 4px;
-}
-
 .hero {
   background: #f7f7f9;
   position: relative;
@@ -347,6 +178,10 @@ body {
   }
 }
 
+.hidden {
+  transform: scale(0);
+}
+
 .navbar {
   padding: 1rem 1.5rem;
   align-items: center;
@@ -356,6 +191,9 @@ body {
 
 .navbar__link {
   color: #2230d2;
+  animation-name: rotate-logo;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
 }
 
 .navbar__hamb {
@@ -367,7 +205,7 @@ body {
   content: "";
   position: absolute;
   background-color: #fff;
-  background-image: url("images/shapes-bg.png");
+  background-image: url("https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/add-set-up-mobile-version--portfolio/images/shapes.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -518,6 +356,18 @@ body {
   cursor: pointer;
 }
 
+.about__lang__top__img {
+  transform: rotate(90deg);
+}
+
+.about__lang__bottom li {
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 9px 12px;
+}
+
 .about__frameworks {
   border-bottom: 1px solid #dfe1e6;
 }
@@ -544,7 +394,7 @@ body {
   content: "";
   position: absolute;
   background-color: #6070ff;
-  background-image: url("images/shapes-big.svg");
+  background-image: url("https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/c8dcf1476c30337e684a9325358fe7f2b7410486/images/contact-form-shapes-mobile.svg");
   background-size: contain;
   background-position: right;
   background-origin: content-box;
@@ -588,7 +438,8 @@ body {
 }
 
 .contact__container form li label {
-  display: none;
+  display: block;
+  color: #fff;
 }
 
 .contact__container form li textarea {
@@ -610,16 +461,12 @@ body {
   margin: 18px 0;
 }
 
-.error {
-  text-align: center;
-  color: red;
-}
-
 .modal {
   background: #fff;
   padding: 1.5rem;
   width: 90%;
   opacity: 0;
+  border-radius: 16px;
   visibility: hidden;
   transition: transform 1s, opacity 1s, visibility 0s;
   z-index: 300;
@@ -667,15 +514,6 @@ body {
   margin: 1rem 0;
 }
 
-/* --------------------------POP UP PROPERITY */
-.popup-button-action a {
-  text-decoration: none;
-  color: #396df2;
-  position: relative;
-  top: -4px;
-}
-
-/* --------------------------------END OF POP UP PROPERITY */
 .modal__btn li a {
   border: 1px solid #6070ff;
   padding: 0.6rem 1.5vw;
@@ -686,6 +524,10 @@ body {
 .modal__feature ul {
   padding: 0;
   margin: 0;
+}
+
+.modal__feature ul li {
+  margin-left: 1.5rem;
 }
 
 .modal.active {
@@ -724,10 +566,6 @@ body {
 }
 
 @media (min-width: 992px) {
-  .paragraph-description-mobile {
-    display: none;
-  }
-
   .navbar__menu__link:hover {
     color: #396df2;
     font-size: 17px;
@@ -742,13 +580,6 @@ body {
   transition: transform 0.5s;
 }
 
-/* -------pop propretie */
-.headline-popup a img {
-  margin-top: 12px;
-}
-
-/* -----------------end of pop properity------- */
-
 .head__icons__link img:hover {
   transform: scale(1.5);
 }
@@ -756,8 +587,6 @@ body {
 .about__icons__link img:hover {
   transform: scale(1.5);
 }
-
-/* ----------------------------POP UP small screen design------------------- */
 
 @keyframes rotate-logo {
   50% {
@@ -770,201 +599,6 @@ body {
 }
 
 @media (max-width: 992px) {
-  .popup-container {
-    background: #fff;
-    border: 1px solid #ebecf0;
-    width: 90%;
-    height: 68%;
-    position: fixed;
-    left: 50%;
-    top: 49%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    display: none;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    border-radius: 16px;
-  }
-
-  .popup-content {
-    font-family: "Poppins", sans-serif;
-  }
-
-  .headline-popup {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 18px;
-    margin-left: 16px;
-    width: 90%;
-    height: 36px;
-  }
-
-  .headline-popup h1 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #172b4d;
-  }
-
-  .small-tags {
-    display: flex;
-    width: 70%;
-    height: 16px;
-    list-style: none;
-    flex-direction: row;
-    padding-left: 12px;
-    justify-content: space-between;
-    margin-top: 6px;
-    margin-left: 7px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    color: #344563;
-  }
-
-  .counter {
-    width: 8px;
-    height: 8px;
-  }
-
-  .canopy-sm-tag {
-    color: #344563;
-  }
-
-  .second-sm-tag {
-    color: #7a869a;
-  }
-
-  .popup-image-container {
-    display: none;
-  }
-
-  .popup-mobile-container {
-    width: 311px;
-    background: url(images/pop-mobile.png) no-repeat;
-    height: 220px;
-    margin-left: 16px;
-    margin-top: 20px;
-  }
-
-  .buttom-content-container {
-    display: flex;
-    flex-direction: column;
-    width: 311px;
-    margin-left: 5%;
-    margin-top: -1%;
-  }
-
-  .paragraph-description-desktop {
-    /* display: none; */
-  }
-
-  .paragraph-description-mobile {
-    display: flex;
-    width: 311px;
-    height: 220px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #055beed5;
-    margin-top: 8%;
-  }
-
-  .about__lang__bottom li {
-    align-items: center;
-    gap: 1rem;
-    border-radius: 8px;
-    margin: 12px 0;
-    padding: 9px 12px;
-  }
-
-  .modal__feature ul li {
-    margin-left: 1.5rem;
-  }
-
-  .action-content {
-    width: 306px;
-    height: 157px;
-    margin-left: 24px;
-  }
-
-  .popup-tags .first li {
-    margin-top: 2px;
-    padding: 4px 8px;
-    background: #ebebff;
-    margin-left: 8px;
-    border-radius: 8px;
-    height: 24px;
-  }
-
-  .popup-tags ul.second li {
-    display: none;
-  }
-
-  .popup-tags {
-    height: 24%;
-    margin-top: 10%;
-    position: relative;
-    right: 10%;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    color: #6070ff;
-  }
-
-  .popup-tags .first {
-    display: flex;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-    height: 50%;
-  }
-
-  .divider-popup img {
-    width: 303px;
-    position: relative;
-    right: 5%;
-  }
-
-  .popup-button-action {
-    /* border: 1px solid green; */
-    width: 311px;
-    height: 50%;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    display: flex;
-    margin-top: 5px;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: -25px;
-  }
-
-  .popup-button-action button {
-    background: #fff;
-    width: 142px;
-    height: 40px;
-    padding: 8px 12px;
-    border: 1px solid #396df2;
-    border-radius: 8px;
-  }
-
-  .deploy-icon-popup {
-    width: 18px;
-    position: relative;
-    top: 4px;
-  }
-
   .navbar__menu {
     visibility: hidden;
     opacity: 0;
@@ -1067,7 +701,6 @@ body {
   }
 
   .works__card {
-    position: relative;
     align-items: center;
     max-width: 1104px;
     column-gap: 46px;
@@ -1144,8 +777,7 @@ body {
     max-width: 447px;
   }
 
-  .contact__container form li:nth-child(4),
-  .contact__container form li:nth-child(5) {
+  .contact__container form li:last-child {
     text-align: center;
   }
 
@@ -1212,7 +844,6 @@ body {
 
   .works__cards {
     padding: 8.8rem;
-    position: relative;
   }
 
   .about {
