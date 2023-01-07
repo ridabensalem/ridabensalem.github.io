@@ -84,15 +84,16 @@ window.onload = function objectStorage() {
   textMessage.value = data.textMessage;
 
   function saveToLocalStorage() {
-    // Update the data object with the values from the form elements
+  // Update the data object with the values from the form elements
     data.fullName = fullName.value;
     data.email = email.value;
     data.textMessage = textMessage.value;
-
     // Save the data object to local storage
     localStorage.setItem('formData', JSON.stringify(data));
   }
 
   // Store data when user changes an existing data
   fullName.addEventListener('input', saveToLocalStorage);
+  email.addEventListener('input', saveToLocalStorage);
+  textMessage.addEventListener('input', saveToLocalStorage);
 };
