@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // -----------------Storing information in Js object --------------------------------
 
 const projects = [
@@ -38,18 +39,6 @@ const projects = [
     source: 'https://github.com/ridabensalem/ridabensalem.github.io',
   },
 ];
-//  -----------------Handiling the pop up functionality----------------------------
-const modalPopup = document.querySelector('.block-popup');
-const popupOpening = document.querySelector('.popup-open');
-const popupClosing = document.querySelector('.popup-close');
-function Display() {
-  modalPopup.style.display = 'block';
-}
-function closePopup() {
-  modalPopup.style.display = 'none';
-}
-popupOpening.addEventListener('click', Display);
-popupClosing.addEventListener('click', closePopup);
 
 // dynamic// dynamic
 const workTitles = document.getElementsByClassName('works__card__title');
@@ -70,4 +59,22 @@ for (let i = 0; i < projects.length; i += 1) {
   popTitles[i].innerHTML = projects[i].name;
   popDesc[i].innerHTML = projects[i].description;
   popImg[i].setAttribute('src', projects[i].image[1]);
+}
+
+//  -----------------Handiling the pop up functionality----------------------------
+const modalPopup = document.querySelector('.block-popup');
+const Background = document.querySelector('.works');
+function Display() {
+  modalPopup.style.display = 'block';
+  Background.style.opacity = '0.6';
+  Background.style.backgroundColor = '#C1C7D0';
+  Background.style.backdropFilter = 'blur(10px)';
+  Background.style.mixBlendMode = 'multiply';
+}
+function closePopup() {
+  modalPopup.style.display = 'none';
+  Background.style.opacity = '1';
+  Background.style.backgroundColor = '#E5E5E5';
+  Background.style.backdropFilter = 'none';
+  Background.style.mixBlendMode = 'normal';
 }
