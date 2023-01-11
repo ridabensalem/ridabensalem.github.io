@@ -178,6 +178,10 @@ body {
   }
 }
 
+.hidden {
+  transform: scale(0);
+}
+
 .navbar {
   padding: 1rem 1.5rem;
   align-items: center;
@@ -187,6 +191,9 @@ body {
 
 .navbar__link {
   color: #2230d2;
+  animation-name: rotate-logo;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
 }
 
 .navbar__hamb {
@@ -198,7 +205,7 @@ body {
   content: "";
   position: absolute;
   background-color: #fff;
-  background-image: url("images/shapes-bg.png");
+  background-image: url("https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/add-set-up-mobile-version--portfolio/images/shapes.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -387,7 +394,7 @@ body {
   content: "";
   position: absolute;
   background-color: #6070ff;
-  background-image: url("images/shapes-big.svg");
+  background-image: url("https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/c8dcf1476c30337e684a9325358fe7f2b7410486/images/contact-form-shapes-mobile.svg");
   background-size: contain;
   background-position: right;
   background-origin: content-box;
@@ -454,16 +461,12 @@ body {
   margin: 18px 0;
 }
 
-.error {
-  text-align: center;
-  color: red;
-}
-
 .modal {
   background: #fff;
   padding: 1.5rem;
   width: 90%;
   opacity: 0;
+  border-radius: 16px;
   visibility: hidden;
   transition: transform 1s, opacity 1s, visibility 0s;
   z-index: 300;
@@ -774,8 +777,7 @@ body {
     max-width: 447px;
   }
 
-  .contact__container form li:nth-child(4),
-  .contact__container form li:nth-child(5) {
+  .contact__container form li:last-child {
     text-align: center;
   }
 
